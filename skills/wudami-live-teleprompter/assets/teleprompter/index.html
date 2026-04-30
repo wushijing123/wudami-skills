@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Live Teleprompter</title>
+  <meta name="description" content="直播投屏器 — 演示文稿与口播稿同步工具" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- Navigation Bar -->
+    <header class="top-bar">
+      <div class="top-bar__logo">
+        <div class="top-bar__logo-icon">T</div>
+        <span>Live Teleprompter</span>
+      </div>
+      <div class="top-bar__title">
+        <span id="deckTitle">—</span>
+      </div>
+      <div class="top-bar__status">
+        <span class="status-label" id="statusText">投屏未连接</span>
+        <span class="status-dot" id="statusDot"></span>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-area">
+      <!-- Left: Slide Display -->
+      <div class="slide-panel">
+        <div class="slide-display">
+          <div class="slide-container" id="slideContainer">
+            <!-- Slide rendered here -->
+          </div>
+        </div>
+        <div class="thumbnails-strip" id="thumbnailsStrip">
+          <!-- Thumbnails rendered here -->
+        </div>
+      </div>
+
+      <!-- Right: Script Panel -->
+      <div class="script-panel">
+        <div class="script-header">
+          <div class="script-header__left">
+            <div class="script-header__title">口播稿</div>
+            <button class="theme-toggle" id="themeToggle" title="护眼模式">☾</button>
+          </div>
+          <div class="font-controls">
+            <button class="font-btn" id="fontDecrease" title="缩小">A−</button>
+            <button class="font-btn" id="fontIncrease" title="放大">A+</button>
+          </div>
+        </div>
+        <div class="script-body" id="scriptBody">
+          <!-- Script sections rendered here -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Control Bar -->
+    <div class="control-bar">
+      <div class="control-bar__left">
+        <button class="ctrl-btn" id="btnImport">
+          <span class="ctrl-btn__icon">⌘</span>
+          导入文件
+        </button>
+        <button class="ctrl-btn ctrl-btn--primary" id="btnCast">
+          <span class="ctrl-btn__icon">◉</span>
+          打开投屏
+        </button>
+        <div class="slide-counter" id="slideCounter">0</div>
+      </div>
+      <div class="control-bar__right">
+        <button class="nav-btn" id="btnPrev" title="上一页 ←">◀</button>
+        <div class="page-indicator">
+          <span class="page-indicator__current" id="currentPage">0</span>
+          <span class="page-sep">/</span>
+          <span id="totalPages">0</span>
+        </div>
+        <button class="nav-btn" id="btnNext" title="下一页 →">▶</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

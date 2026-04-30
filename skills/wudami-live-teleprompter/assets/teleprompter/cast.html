@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>投屏窗口 — Live Teleprompter</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body { margin: 0; padding: 0; background: #000; overflow: hidden; cursor: none; }
+  </style>
+</head>
+<body>
+  <div class="cast-window" id="castWindow">
+    <div class="slide-container" id="castSlideContainer">
+      <!-- Slide content synced from main window -->
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="cast.js"></script>
+</body>
+</html>
