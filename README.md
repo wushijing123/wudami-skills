@@ -21,7 +21,7 @@
 
 | Skill | 它是干嘛的 |
 |---|---|
-| `wudami-content-workflow` | 吴大咪内容生产总流程，从找选题到写脚本、写文章、标题、开头和正文生成。 |
+| `wudami-content-workflow` | 内容生产总流程，从找选题到写脚本、写文章、标题、开头和正文生成。 |
 | `wudami-jiaoben-api` | 从短视频链接提取口播文案，并把脚本拆成结构化分析。 |
 | `wudami-lark-single-video-api` | 单条小红书视频口播提取器，适合给飞书表格自动补“口播文案”字段。 |
 | `wudami-live-teleprompter` | 把 Markdown、DOCX、HTML、大纲转成直播投屏器和口播提词器。 |
