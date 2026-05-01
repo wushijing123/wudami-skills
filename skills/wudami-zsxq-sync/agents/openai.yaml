@@ -1,4 +1,0 @@
-interface:
-  display_name: "知识星球同步"
-  short_description: "同步知识星球星主内容到飞书多维表格并自动去重分类摘要"
-  default_prompt: "Use $wudami-zsxq-sync to sync recent ZSXQ owner topics into Lark Base."
